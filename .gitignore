@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 #Junk
 .DS_Store
 .vscode/
 .idea/
 
+=======
+>>>>>>> 9ad2fc8c02b0c3f5e5b40817aece1dbcd52301b4
 # Logs
 logs
 *.log
@@ -10,6 +13,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+<<<<<<< HEAD
+=======
+.pnpm-debug.log*
+>>>>>>> 9ad2fc8c02b0c3f5e5b40817aece1dbcd52301b4
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -46,8 +53,13 @@ build/Release
 node_modules/
 jspm_packages/
 
+<<<<<<< HEAD
 # TypeScript v1 declaration files
 typings/
+=======
+# Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
+>>>>>>> 9ad2fc8c02b0c3f5e5b40817aece1dbcd52301b4
 
 # TypeScript cache
 *.tsbuildinfo
@@ -58,6 +70,12 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+<<<<<<< HEAD
+=======
+# Optional stylelint cache
+.stylelintcache
+
+>>>>>>> 9ad2fc8c02b0c3f5e5b40817aece1dbcd52301b4
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -73,15 +91,31 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+<<<<<<< HEAD
 # dotenv environment variables file
 .env
 .env.test
 
 # parcel-bundler cache (https://parceljs.org/)
+=======
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+>>>>>>> 9ad2fc8c02b0c3f5e5b40817aece1dbcd52301b4
 .parcel-cache
 
 # Next.js build output
 .next
+<<<<<<< HEAD
+=======
+out
+>>>>>>> 9ad2fc8c02b0c3f5e5b40817aece1dbcd52301b4
 
 # Nuxt.js build / generate output
 .nuxt
@@ -89,13 +123,27 @@ dist
 
 # Gatsby files
 .cache/
+<<<<<<< HEAD
 # Comment in the public line in if your project uses Gatsby and *not* Next.js
+=======
+# Comment in the public line in if your project uses Gatsby and not Next.js
+>>>>>>> 9ad2fc8c02b0c3f5e5b40817aece1dbcd52301b4
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
 # vuepress build output
 .vuepress/dist
 
+<<<<<<< HEAD
+=======
+# vuepress v2.x temp and cache directory
+.temp
+.cache
+
+# Docusaurus cache and generated files
+.docusaurus
+
+>>>>>>> 9ad2fc8c02b0c3f5e5b40817aece1dbcd52301b4
 # Serverless directories
 .serverless/
 
@@ -107,3 +155,16 @@ dist
 
 # TernJS port file
 .tern-port
+<<<<<<< HEAD
+=======
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+>>>>>>> 9ad2fc8c02b0c3f5e5b40817aece1dbcd52301b4
