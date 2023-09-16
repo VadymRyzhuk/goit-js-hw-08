@@ -1,5 +1,5 @@
 
- import SimpleLightbox from 'simplelightbox';
+import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import throttle from 'lodash.throttle';
 
@@ -19,3 +19,5 @@ window.addEventListener('load', function() {
         player.setCurrentTime(parseFloat(savedTime));
     }
 });
+
+
