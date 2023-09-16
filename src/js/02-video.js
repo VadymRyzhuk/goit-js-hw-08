@@ -1,11 +1,21 @@
 
- const iframe = document.querySelector('iframe');
-    const player = new Vimeo.Player(iframe);
+ import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+import throttle from 'lodash.throttle';
 
-    player.on('play', function() {
-        console.log('played the video!');
-    });
+const iframe = document.querySelector('iframe');
+const player = new Vimeo.Player(iframe);
 
-    player.getVideoTitle().then(function(title) {
-        console.log('title:', title);
-        });
+
+player.on('timeupdate', throttle(function(data) {
+    const currentTime = data.seconds;
+    localStorage.setItem('videoplayer-current-time', currentTime);
+}, 1000)); 
+
+window.addEventListener('load', function() {
+   
+    const savedTime = localStorage.getItem('videoplayer-current-time');
+    if (savedTime !== null) {
+        player.setCurrentTime(parseFloat(savedTime));
+    }
+});
